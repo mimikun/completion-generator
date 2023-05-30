@@ -10,10 +10,35 @@ mod parser;
 use crate::enum_::{ArgsNumType, OptionToken};
 use parser::parse_line;
 
-const MAIN: &str = "catkin";
+const MAIN: &str = "bw";
 
-const VERBS: [&str; 9] = [
-    "build", "clean", "config", "create", "env", "init", "list", "locate", "profile",
+const VERBS: [&str; 26] = [
+    "login",
+    "logout",
+    "lock",
+    "unlock",
+    "sync",
+    "generate",
+    "encode",
+    "config",
+    "update",
+    "completion",
+    "status",
+    "serve",
+    "list",
+    "get",
+    "create",
+    "edit",
+    "delete",
+    "restore",
+    "move",
+    "confirm",
+    "import",
+    "export",
+    "share",
+    "send",
+    "receive",
+    "help"
 ];
 
 pub fn generate_each_option(
